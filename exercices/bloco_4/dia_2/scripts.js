@@ -69,3 +69,22 @@ for (let index = 0; index < numbers.length; index += 1) {
 console.log(maiorNumero);
 
 */
+
+// -----------------------------------------------------------------------------
+
+/* 
+let oddNum = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 === 1) {
+        oddNum += 1;
+    }
+}
+if (oddNum > 0) {
+    console.log(oddNum);
+}
+else {
+    console.log('Nenhum valor ímpar encontrado')
+}
+
+*/
