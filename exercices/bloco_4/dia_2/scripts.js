@@ -10,6 +10,8 @@ for (let i = 0; i < numbers.length; i += 1) {
 
 */
 
+// ------------------------------------------------------------------------------
+
 /* Para somar os elementos do array e imprimir a soma deles:
 
 let soma = 0;
@@ -20,6 +22,8 @@ console.log (soma);
 
 */
 
+// ---------------------------------------------------------------------------------
+
 /* Para imprimir a média aritimética do array:
 
 let soma = 0;
@@ -29,7 +33,8 @@ for (let index = 0; index < numbers.length; index += 1) {
     divisor = soma / numbers.length;
 }
 console.log (divisor);
-
 */
+
+// -----------------------------------------------------------------------
 
 
