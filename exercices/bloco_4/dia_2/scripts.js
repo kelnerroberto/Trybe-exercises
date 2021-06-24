@@ -55,4 +55,17 @@ else {
 
 */
 
+// -------------------------------------------------------------------
 
+/* Verifica e imprime qual é o maior número do array numbers:
+
+let maiorNumero = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] > maiorNumero) {
+        maiorNumero = numbers[index];
+    }
+}
+console.log(maiorNumero);
+
+*/
