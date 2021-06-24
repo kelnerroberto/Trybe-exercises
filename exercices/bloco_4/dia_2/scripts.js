@@ -37,4 +37,22 @@ console.log (divisor);
 
 // -----------------------------------------------------------------------
 
+/* Para imprimir mensagens se o valor da média aritimética é maior ou menor/igual a 20:
+
+let soma = 0;
+let divisor;
+for (let index = 0; index < numbers.length; index += 1) {
+    soma += numbers [index];
+    divisor = soma / numbers.length;
+}
+
+if (divisor > 20) {
+    console.log ('Valor maior que 20!')
+}
+else {
+    console.log ('Valor menor ou igual a 20!')
+}
+
+*/
+
 
