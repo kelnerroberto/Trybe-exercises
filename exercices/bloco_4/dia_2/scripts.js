@@ -20,3 +20,16 @@ console.log (soma);
 
 */
 
+/* Para imprimir a média aritimética do array:
+
+let soma = 0;
+let divisor;
+for (let index = 0; index < numbers.length; index += 1) {
+    soma += numbers [index];
+    divisor = soma / numbers.length;
+}
+console.log (divisor);
+
+*/
+
+
