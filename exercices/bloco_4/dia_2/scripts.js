@@ -1,13 +1,15 @@
 // exercícios
 
-/* Para funcionar os exercícios de 1 à 6 deve-se descomentar a variável "numbers" abaixo (linha 6).
-Para os exercícios 7 e 8, deve-se descomentar a partir da linha 119. 
+/* Para funcionar os exercícios de 1 à 7 deve-se descomentar a variável "numbers" abaixo (linha 6).
+Para os exercícios 8 e 9, deve-se comentar novamente a linha 6 e descomentar a partir da linha 126. 
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 */
 
-/* Para imprimir os elementos do array:
+//-----------------------------------------------------------------------------------
+
+/* 1. Para imprimir os elementos do array:
 
 for (let i = 0; i < numbers.length; i += 1) {
     console.log (numbers[i]);
@@ -17,7 +19,9 @@ for (let i = 0; i < numbers.length; i += 1) {
 
 // ------------------------------------------------------------------------------
 
-/* 1. Para somar os elementos do array e imprimir a soma deles:
+
+/* 2. Para somar os elementos do array e imprimir a soma deles:
+
 
 let soma = 0;
 for (let index = 0; index < numbers.length; index += 1) {
@@ -29,7 +33,8 @@ console.log (soma);
 
 // ---------------------------------------------------------------------------------
 
-/* 2. Para imprimir a média aritimética do array:
+
+/* 3. Para imprimir a média aritimética do array:
 
 let soma = 0;
 let divisor;
@@ -42,7 +47,7 @@ console.log (divisor);
 
 // -----------------------------------------------------------------------
 
-/* 3. Para imprimir mensagens se o valor da média aritimética é maior ou menor/igual a 20:
+/* 4. Para imprimir mensagens se o valor da média aritimética é maior ou menor/igual a 20:
 
 let soma = 0;
 let divisor;
@@ -62,7 +67,7 @@ else {
 
 // -------------------------------------------------------------------
 
-/* 4. Verifica e imprime qual é o maior número do array numbers:
+/* 5. Verifica e imprime qual é o maior número do array numbers:
 
 let maiorNumero = 0;
 
@@ -77,7 +82,7 @@ console.log(maiorNumero);
 
 // -----------------------------------------------------------------------------
 
-/* 5. Procura se existe número ímpar no array e se existirem, quantos números.
+/* 6. Procura se existe número ímpar no array e se existirem, quantos números.
 
 let oddNum = 0;
 
@@ -95,9 +100,9 @@ else {
 
 */
 
-//---------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
-/* 6. Descobre o menor número do array
+/* 7. Descobre o menor número do array
 
 let arrayNum = [];
 let menorNumero;
@@ -116,7 +121,7 @@ for (let index = 0; index < numbers.length; index += 1) {
 
 // ------------------------------------------------------------------------------------
 
-/* 7. Cria array  de 1 até 25 utilizando a propriedade for
+/* 8. Cria array de 1 até 25 utilizando a propriedade for
 
 let arrNum = [];
 
@@ -125,11 +130,12 @@ for (let index = 1; index < 26; index += 1) {
 }
 console.log(arrNum);
 
+
 */
 
 //-----------------------------------------------------------------------------------------
 
-/* 8. Divide os elementos do array criado acima por 2.
+/* 9. Divide os elementos do array criado acima por 2.
 
 let numDiv = [];
 
