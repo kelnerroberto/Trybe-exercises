@@ -72,7 +72,8 @@ console.log(maiorNumero);
 
 // -----------------------------------------------------------------------------
 
-/* 
+/* Procura se existe número ímpar no array e se existirem, quantos números.
+
 let oddNum = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
@@ -88,3 +89,22 @@ else {
 }
 
 */
+
+//---------------------------------------------------------------
+
+/* Descobre o menor número do array
+
+let arrayNum = [];
+let menorNumero;
+
+for (let index = 0; index < numbers.length; index += 1) {
+    arrayNum.push(numbers[index]);
+    for (let i = 0; i < arrayNum.length; i += 1) {
+        if (arrayNum[i] < numbers[index]) {
+        menorNumero = arrayNum[i];
+        }
+    }
+}
+    console.log(menorNumero);
+
+
