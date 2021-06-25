@@ -1,6 +1,6 @@
 // exercícios
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+ // let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 /* Para imprimir os elementos do array:
 
@@ -107,4 +107,17 @@ for (let index = 0; index < numbers.length; index += 1) {
 }
     console.log(menorNumero);
 
+*/
 
+// ------------------------------------------------------------------------------------
+
+/* Cria array  de 1 até 25 utilizando a propriedade for
+
+let arrNum = [];
+
+for (let index = 1; index < 26; index += 1) {
+    arrNum.push(index);
+}
+console.log(arrNum);
+
+*/
