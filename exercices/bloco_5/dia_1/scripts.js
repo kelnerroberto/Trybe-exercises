@@ -39,3 +39,9 @@ changeColor('white')
    upperCase()
    // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
        
+      function showConsole() {
+         let shower = document.getElementsByTagName('p');
+         for (let index = 0; index < shower.length; index += 1) {
+            console.log (shower[index].innerText)
+         }
+      }
