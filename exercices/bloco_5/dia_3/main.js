@@ -1,45 +1,39 @@
-const divUm = document.getElementById('divUm');
-const divDois = document.getElementById('divDois');
-const divTres = document.getElementById('divTres');
-const input = document.getElementById('input');
-const myWebpage = document.getElementById('mySpotrybefy');
+function createDaysOfTheWeek() {
+  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+  const weekDaysList = document.querySelector('.week-days');
 
-/*
- Copie esse arquivo e edite apenas ele;
- Crie uma função que adicione a classe 'tech' ao elemento selecionado;
- Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
- */
-function addClass(param1) {
-    param1.target.className = 'tech';
-}
-divUm.addEventListener('click', addClass);
-divDois.addEventListener('click', addClass);
-divTres.addEventListener('click', addClass);
+  for (let index = 0; index < weekDays.length; index += 1) {
+    const days = weekDays[index];
+    const dayListItem = document.createElement('li');
+    dayListItem.innerHTML = days;
 
-/* Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-com a classe 'tech';*/
-function renameTextBox() {
-    document.querySelector('.tech').innerText = input.value;
-}
-input.addEventListener('keyup', renameTextBox);
+    weekDaysList.appendChild(dayListItem);
+  };
+};
 
-/* Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
-redirecione para alguma página;
-1. Que tal redirecionar para seu portifólio?
- Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-a cor do mesmo;
+createDaysOfTheWeek();
 
-Segue abaixo um exemplo do uso de event.target:
-*/
+// Escreva seu código abaixo.
 
-function resetText(event) {
-  // O Event é passado como um parâmetro para a função.
-  event.target.innerText = 'Opção reiniciada';
-  // O event possui várias propriedades, porém a mais usada é o event.target,
-  // que retorna o objeto que disparou o evento.
+const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+const diasMes = document.querySelector('#days');
+for (let index = 0; index < dezDaysList.length; index += 1) {
+  let daysMonth = dezDaysList[index];
+  let dayLiItem = document.createElement('li');
+  dayLiItem.innerText = daysMonth;
+  dayLiItem.className = 'day'
+  if (daysMonth === 24 || daysMonth === 31) {
+    dayLiItem.className = 'day holiday';
+  }
+  if (daysMonth === 4 || daysMonth === 11 || daysMonth === 18) {
+    dayLiItem.className = 'day friday';
+  }
+  if (daysMonth === 25) {
+    dayLiItem.className = 'day holiday friday'
+  }
+  diasMes.appendChild(dayLiItem);
 }
 
-divUm.addEventListener('dblclick', resetText);
-// Não precisa passar o parâmetro dentro do addEventListener. O próprio
-// navegador fará esse trabalho por você, não é legal? Desse jeito, o
-// event.target na nossa função retornará o objeto 'divUm'.
+//-----------------------------------------------------------------------------------------------
+
+
