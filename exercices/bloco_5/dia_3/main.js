@@ -36,4 +36,31 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
 
 //-----------------------------------------------------------------------------------------------
 
+const dinamicButtonsBox = document.querySelector('.buttons-container');
+function addButton () {
+  let elementOfButton = document.createElement('button');
+  elementOfButton.innerText = 'Feriados';
+  elementOfButton.id = 'btn-holiday'
+  dinamicButtonsBox.appendChild(elementOfButton)
+}
+addButton()
+
+// -----------------------------------------------------------------------------------------------
+
+const clickHoliday = document.getElementById('btn-holiday');
+function clickEventOfButton() {
+  for(let index = 0; index < document.getElementsByClassName('holiday').length; index += 1){
+  let feriadosDoMes = document.getElementsByClassName('holiday')[index];
+  if (feriadosDoMes.style.backgroundColor === 'green') {
+    feriadosDoMes.style.backgroundColor = 'rgb(238,238,238)';
+    feriadosDoMes.style.color = '#666';
+  } else {
+  feriadosDoMes.style.backgroundColor = 'green';
+  feriadosDoMes.style.color = 'white';
+  }
+}
+}
+clickHoliday.addEventListener('click', clickEventOfButton);
+
+//----------------------------------------------------------------------------------------
 
