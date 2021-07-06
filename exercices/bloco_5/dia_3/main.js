@@ -40,8 +40,8 @@ const dinamicButtonsBox = document.querySelector('.buttons-container');
 function addButton () {
   let elementOfButton = document.createElement('button');
   elementOfButton.innerText = 'Feriados';
-  elementOfButton.id = 'btn-holiday'
-  dinamicButtonsBox.appendChild(elementOfButton)
+  elementOfButton.id = 'btn-holiday';
+  dinamicButtonsBox.appendChild(elementOfButton);
 }
 addButton()
 
@@ -54,7 +54,8 @@ function clickEventOfButton() {
   if (feriadosDoMes.style.backgroundColor === 'green') {
     feriadosDoMes.style.backgroundColor = 'rgb(238,238,238)';
     feriadosDoMes.style.color = '#666';
-  } else {
+  } 
+  else {
   feriadosDoMes.style.backgroundColor = 'green';
   feriadosDoMes.style.color = 'white';
   }
@@ -64,3 +65,50 @@ clickHoliday.addEventListener('click', clickEventOfButton);
 
 //----------------------------------------------------------------------------------------
 
+function addFridayButton () {
+  let elementOfButton = document.createElement('button');
+  elementOfButton.innerText = 'Sexta-feira';
+  elementOfButton.id = 'btn-friday';
+  dinamicButtonsBox.appendChild(elementOfButton);
+}
+addFridayButton();
+
+//------------------------------------------------------------------------------------------------------
+
+const clickFriday = document.getElementById('btn-friday');
+function clickOfFriday() {
+  for(let index = 0; index < document.getElementsByClassName('friday').length; index += 1){
+  let sextasDoMes = document.querySelectorAll('.friday')[index];
+  if (sextasDoMes.style.backgroundColor === 'red') {
+    sextasDoMes.style.backgroundColor = 'rgb(238,238,238)';
+    sextasDoMes.style.color = '#666';
+  } 
+  else {
+  sextasDoMes.style.backgroundColor = 'red';
+  sextasDoMes.style.color = 'white';
+  }
+}
+}
+clickFriday.addEventListener('click', clickOfFriday);
+
+//-------------------------------------------------------------------------------------------
+
+function zoomInDays(){
+  diasMes.addEventListener('mouseover', mouseOver)
+
+  function mouseOver(event) {
+  event.target.style.fontSize = '30px';
+  event.target.style.fontWeight = '800';
+  }
+}
+zoomInDays();
+
+function zoomOutDays(){
+  diasMes.addEventListener('mouseout', mouseOverOut)
+
+  function mouseOverOut(event){
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = 'normal';
+  }
+}
+zoomOutDays();
