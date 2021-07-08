@@ -78,3 +78,17 @@ function changeTextColor(){
 }
 
 inputOfText.addEventListener('keyup', changeTextColor);
+
+// Mudar o espaçamento entre as linhas de todos os textos
+let getToLineHeight;
+const lineHeightButton = document.querySelector('#line-height');
+
+function changeLineHeight() {
+    for (let index = 0; index < document.querySelectorAll('.chgLineHgt'); index += 1){
+        getToLineHeight = document.querySelectorAll('.chgLineHgt')[index].innerHTML;
+        getToLineHeight.style.lineHeight = '30px';
+       }
+}
+
+lineHeightButton.addEventListener('click', changeLineHeight);
+changeLineHeight();
