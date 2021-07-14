@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de currículo</h1>
+    </header>
+
+    <form action="" method="GET">
+        <fieldset class='user-data'>Dados do usuário
+            <div class='name-field'>
+                <label for="user-name">Nome:</label>
+                <br>
+                <input type="text" name="name" id="user-name" maxlength="40" required>
+            </div>
+
+            <div class='email-field'>
+                <label for='user-email'>E-mail:</label>
+                <br>
+                <input type="email" name='email' id='user-email' maxlength="50" required>
+            </div>
+
+            <div class='cpf-field'>
+                <label for='user-cpf'>CPF:</label>
+                <br>
+                <input type="text" name='cpf' id='user-cpf' maxlength="14" required>
+            </div>
+
+            <div class='user-address-field'>
+                <label for="user-address">Endereço:</label>
+                <br>
+                <input type="text" name="adress" id="user-address" maxlength="200" required>
+            </div>
+
+            <div class='user-city-field'>
+                <label for="user-city">Cidade:</label>
+                <br>
+                <input type="text" name='city' id="user-city" maxlength="28" required>
+            </div>
+
+            <div class='user-state-field'>
+                <label for="user-state">Estado:</label>
+                <select name="states" id="user-state" required>
+
+                </select>
+            </div>
+
+            <div class='type-of-residence-field'>
+                <label for="">Tipo de residência:</label>
+                <br>
+                <input type="radio" value='house'name="residence" id="user-residence-house">
+                <label for="user-residence-house">Casa</label>
+                <br>
+                <input type="radio" value='ap' name="residence" id='user-residence-ap'>
+                <label for="user-residence-ap">Apartamento</label>
+            </div>
+        </fieldset>
+
+        <fieldset class='user-last-job-data'>Sobre seu último emprego
+            <div class='last-job-field'>
+                <label for="job-abstract">Resumo do seu último emprego:
+                </label>
+                <br>
+                <textarea name="abstract" id="job-abstract" maxlength="1000" placeholder="Digite aqui o resumo do seu último emprego" required></textarea>
+            </div>
+
+            <div class="role-field">
+                <label for="user-role-lj">Cargo:</label>
+                <br>
+                <input type="text" name="role" id='user-role-lj' maxlength="40" required>
+            </div>
+
+            <div class="role-descprition-field">
+                <label for="role-abstract">Resumo do cargo:</label>
+                <br>
+                <textarea name="role-abstract" id="role-abstract" maxlength="500" placeholder="Digite aqui o resumo do cargo que desempenhava"></textarea>
+            </div>
+
+            <div class='todays-date'>
+                <label for="today">Data de início:</label>
+                <br>
+                <input type="date" id='today'>
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
