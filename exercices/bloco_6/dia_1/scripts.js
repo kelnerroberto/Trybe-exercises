@@ -37,3 +37,10 @@ function createStatesOption() {
     }
 }
 createStatesOption();
+
+const submitBtn = document.querySelector('#submit-btn');
+function preventBtn(event) {
+    event.preventDefault();
+}
+
+submitBtn.addEventListener('click', preventBtn);
