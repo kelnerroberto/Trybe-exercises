@@ -10,4 +10,4 @@ Bloco 4 - Introdução à JavaScript e lógica de programação.
 
 Bloco 5 - JavaScript: DOM, Eventos e Web Storage.
 
-Bloco 6 - HTML e CSS: Forms, Flexbox, Responsivo e Frameworks (Bibliotecas)
+Bloco 6 - HTML e CSS: Forms, Flexbox e Responsivo (Bibliotecas JS e Frameworks CSS)
