@@ -8,7 +8,7 @@ const doingThings = (param) => console.log(param());
 
 doingThings(sleeping);
 */
-
+/*
 const hiredPerson = (name) => ({ nomeCompleto: name, email: `${name.replace(/\s+/g, '_')}@trybe.com`, });
 // Método "string.replace()" retirado de : https://qastack.com.br/programming/5963182/how-to-remove-spaces-from-a-string-using-javascript.
 
@@ -23,3 +23,17 @@ const newEmployees = () => {
 
 
 console.log(newEmployees());
+*/
+
+const numeroSorteado = (max) => Math.floor(Math.random() * max) + 1;
+const sorteio = (number, func) => {
+  if (number === func) {
+    return `O número sorteado foi: ${func}. 
+Parabéns, você ganhou!`;
+  }
+  return `O número sorteado foi: ${func}. 
+Que pena, tente novamente.`;
+}
+
+console.log(sorteio(3, numeroSorteado(5)));
+
