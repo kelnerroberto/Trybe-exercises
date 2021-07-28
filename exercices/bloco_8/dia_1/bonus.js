@@ -46,12 +46,4 @@ const mageDamage = (mana, intelligence) => {
     mana: mageManaFlow(),
   }
 }
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
-console.log(mageDamage(mage.mana, mage.intelligence));
+mageDamage(mage.mana, mage.intelligence);
