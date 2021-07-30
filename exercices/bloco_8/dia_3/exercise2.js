@@ -92,8 +92,6 @@ const expectedResult = [
   },
 ];
 
-function nameAndAge() {
-  return books.map((elemento) => ({ age: elemento.releaseYear - elemento.author.birthYear, author: elemento.author.name})).sort((a, b) => a.age - b.age);
-}
+const nameAndAge = () => books.map((elemento) => ({ age: elemento.releaseYear - elemento.author.birthYear, author: elemento.author.name})).sort((a, b) => a.age - b.age);
 
 assert.deepStrictEqual(nameAndAge(), expectedResult);
