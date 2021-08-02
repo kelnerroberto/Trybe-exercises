@@ -8,8 +8,8 @@ const names = [
 
 function containsA() {
   const sum = names.reduce((acc, elemento) =>{
-    for (let n of elemento) {
-      if (n === 'A' || n === 'a'){
+    for (let letraDoElemento of elemento) {
+      if (letraDoElemento === 'A' || letraDoElemento === 'a'){
         acc += 1
       }
     }
