@@ -30,7 +30,7 @@ const people = [
 
 // escreva filterPeople abaixo
 
-const filterPeople = (array) => array.filter(({ bornIn, nationality}) => (bornIn < 2000 && nationality === 'Australian'));
+const filterPeople = (array) => array.filter(({ bornIn, nationality }) => (bornIn < 2000 && nationality === 'Australian'));
 
 
 
